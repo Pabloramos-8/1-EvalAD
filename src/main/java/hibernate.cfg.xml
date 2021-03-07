@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="SessionFactory">
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.password">root</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost/colegio</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+  <mapping class="org.jesuitasrioja.colegio.modelo.Alumno"/>
+  <mapping class="org.jesuitasrioja.colegio.modelo.Asignatura"/>
+  <mapping class="org.jesuitasrioja.colegio.modelo.Libro"/>
+  <mapping class="org.jesuitasrioja.colegio.modelo.Parte"/>
+  <mapping class="org.jesuitasrioja.colegio.modelo.ParteId"/>
+ </session-factory>
+</hibernate-configuration>
